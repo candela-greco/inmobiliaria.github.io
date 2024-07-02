@@ -106,13 +106,43 @@ margin-right: 5px;
 margin: 0;
 }
 
-.fumar{
-  color: inherit;
-  font-family: inherit;
-  text-transform: none;
-
+.alquileres {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 25px;
 }
 
+.cardAlquiler {
+border: solid black 1px;
+}
+
+.alquiler-img {
+width: 360px;
+}
+
+.alquiler-cuerpo {
+padding: 10px;
+}
+
+.alquiler-ubicacion,
+.alquiler-habitaciones,
+.alquiler-costo {
+display: flex;
+align-items: center;
+padding: 10px;
+}
+
+.alquiler-ubicacion i,
+.alquiler-habitaciones i,
+.alquiler-costo i {
+margin-right: 5px;
+}
+
+.alquiler-ubicacion p,
+.alquiler-habitaciones p,
+.alquiler-costo p {
+margin: 0;
+}
 
 @media (min-width: 1200px){
     .navbar-container {
