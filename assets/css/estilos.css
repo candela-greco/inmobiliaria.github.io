@@ -14,6 +14,7 @@ nav {
     width: auto;
     text-decoration: none;
     white-space: nowrap;
+    color: #fff;
 }
 .menu-icon {
   color: #fff;
@@ -64,11 +65,6 @@ nav {
   color: #fff;
   text-align: center;
 }
-.ventas {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  gap: 25px;
-}
 
 .cardVenta {
 border: solid black 1px;
@@ -106,12 +102,6 @@ margin-right: 5px;
 margin: 0;
 }
 
-.alquileres {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  gap: 25px;
-}
-
 .cardAlquiler {
 border: solid black 1px;
 }
@@ -144,6 +134,10 @@ margin-right: 5px;
 margin: 0;
 }
 
+.boton {
+  padding: 50px;
+}
+
 @media (min-width: 1200px){
     .navbar-container {
       margin-top: 20px;
@@ -158,5 +152,15 @@ margin: 0;
     }
     .menu-icon {
       display: none;
+    }
+    .ventas {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      gap: 25px;
+    }
+    .alquileres {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      gap: 25px;
     }
 }
