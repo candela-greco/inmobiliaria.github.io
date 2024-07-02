@@ -55,15 +55,15 @@ for (let venta of propiedadesVenta) {
   let animales = "";
 
   if (venta.smoke === true) {
-    fumar = `<p style="color: green"><i class="fa-solid fa-smoking"> Permitido fumar</i></p>`;
+    fumar = `<p style="color: green"><i class="fa-solid fa-smoking"></i> Permitido fumar</p>`;
   } else {
-    fumar = `<p style="color: red"><i class="fa-solid fa-smoking"> No se permite fumar</i></p>`;
+    fumar = `<p style="color: red"><i class="fa-solid fa-ban"></i> No se permite fumar</p>`;
   }
 
   if (venta.pets === true) {
-    animales = `<p style="color: green"><i class="fa-solid fa-paw"> Mascotas permitidas</i></p>`;
+    animales = `<p style="color: green"><i class="fa-solid fa-paw"></i> Mascotas permitidas</p>`;
   } else {
-    animales = `<p style="color: red"><i class="fa-solid fa-paw"> No se permiten mascotas</i></p>`;
+    animales = `<p style="color: red"><i class="fa-solid fa-ban"></i></i> No se permiten mascotas</p>`;
   }
 
   template1 += `
@@ -149,15 +149,15 @@ for (let alquiler of propiedadesAlquiler) {
   let animales = "";
 
   if (alquiler.smoke === true) {
-    fumar = `<p style="color: green"><i class="fa-solid fa-smoking"> Permitido fumar</i></p>`;
+    fumar = `<p style="color: green"><i class="fa-solid fa-smoking"></i> Permitido fumar</p>`;
   } else {
-    fumar = `<p style="color: red"><i class="fa-solid fa-smoking"> No se permite fumar</i></p>`;
+    fumar = `<p style="color: red"><i class="fa-solid fa-ban"></i></i> No se permite fumar</p>`;
   }
 
   if (alquiler.pets === true) {
-    animales = `<p style="color: green"><i class="fa-solid fa-paw"> Mascotas permitidas</i></p>`;
+    animales = `<p style="color: green"><i class="fa-solid fa-paw"></i> Mascotas permitidas</p>`;
   } else {
-    animales = `<p style="color: red"><i class="fa-solid fa-paw"> No se permiten mascotas</i></p>`;
+    animales = `<p style="color: red"><i class="fa-solid fa-ban"></i></i> No se permiten mascotas</p>`;
   }
 
   template2 += `
