@@ -3,9 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a1bd5d6a81.js"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/estilos.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <nav>
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="#">Inmobiliaria ADL</a>
+            </div>
+            <input type="checkbox" id="menu" class="menu">
+            <label for="menu" class="menu-icon">&#9776;</label>
+            <ul class="nav-links">
+                <li><a href="#encabezado">Inicio</a></li>
+                <li><a href="ventas">En venta</a></li>
+                <li><a href="alquileres" target="_blank">Alquileres</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header id="encabezado"><p>ENCONTRA TU NUEVA PROPIEDAD</p></header>
+    <section>
+        <h2>Propiedades en Venta</h2>
+        <div class="ventas">
+        </div>
+    </section>
+    <section class="alquileres">
+        <h2>Propiedades en Alquiler</h2>
+        <div class="cardAlquiler"></div>
+    </section>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
