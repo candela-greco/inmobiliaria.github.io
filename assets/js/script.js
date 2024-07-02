@@ -32,17 +32,6 @@ const propiedadesVenta = [
     smoke: false,
     pets: true
   },
-  {
-    src: './assets/imgs/prop4.avif',
-    titulo: 'Casa de lujo en zona residencial',
-    descripcion: 'Casa en zona residencial',
-    ubicacion: 'En zona residencial',
-    habitaciones: '8 habitaciones |',
-    baños: '4 baños',
-    costo: 4000000,
-    smoke: true,
-    pets: false
-  }
 ];
 
 const ventas = document.querySelector(".ventas");
@@ -126,17 +115,6 @@ const propiedadesAlquiler = [
     smoke: false,
     pets: true
   },
-  {
-    src: './assets/imgs/alquiler4.avif',
-    titulo: 'Departamento en los suburbios',
-    descripcion: 'Departamento en zona suburbios',
-    ubicacion: 'En suburbios',
-    habitaciones: '8 habitaciones |',
-    baños: '4 baños',
-    costo: 4000000,
-    smoke: true,
-    pets: false
-  }
 ];
 
 const alquileres = document.querySelector(".alquileres");
