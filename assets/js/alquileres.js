@@ -66,3 +66,50 @@ const propiedadesAlquiler = [
         pets: false
       }
   ];
+
+
+  const alquileres = document.querySelector(".alquileres");
+  
+  let template1 = "";
+  
+  for (let alquiler of propiedadesAlquiler) {
+  
+    let fumar = "";
+    let animales = "";
+  
+    if (alquiler.smoke === true) {
+      fumar = `<p style="color: green"><i class="fa-solid fa-smoking"></i> Permitido fumar</p>`;
+    } else {
+      fumar = `<p style="color: red"><i class="fa-solid fa-ban"></i> No se permite fumar</p>`;
+    }
+  
+    if (alquiler.pets === true) {
+      animales = `<p style="color: green"><i class="fa-solid fa-paw"></i> Mascotas permitidas</p>`;
+    } else {
+      animales = `<p style="color: red"><i class="fa-solid fa-ban"></i></i> No se permiten mascotas</p>`;
+    }
+  
+    template1 += `
+      <div class="cardVenta">
+        <img class="venta-img" src="${alquiler.src}">
+        <div class="venta-cuerpo">
+          <h3 class="venta-tittle">${alquiler.titulo}</h3>
+          <p>${alquiler.descripcion}</p>
+          <div class="venta-ubicacion">
+            <i class="fa-solid fa-location-dot"></i> <p>${alquiler.ubicacion}</p>
+          </div>
+          <div class="venta-habitaciones">
+            <i class="fa-solid fa-bed"></i> <p>${alquiler.habitaciones}</p>
+            <i class="fa-solid fa-bath baño"></i> <p>${alquiler.baños}</p>
+          </div>
+          <div class="venta-costo">
+            <i class="fa-solid fa-dollar-sign"></i> <p>$${alquiler.costo}</p>
+          </div>
+          ${fumar}
+          ${animales}
+        </div>
+      </div>
+    `;
+  }
+  
+  alquileres.innerHTML = template1;
