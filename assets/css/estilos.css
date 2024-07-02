@@ -67,11 +67,14 @@ nav {
 }
 
 .cardVenta {
+margin-left: 50px;
 border: solid black 1px;
+width: 400px;
 }
 
 .venta-img {
-width: 360px;
+  width: 100%;
+  height: auto;
 }
 
 .venta-cuerpo {
@@ -103,11 +106,14 @@ margin: 0;
 }
 
 .cardAlquiler {
+margin-left: 50px;
 border: solid black 1px;
+width: 400px;
 }
 
 .alquiler-img {
-width: 360px;
+width: 100%;
+height: auto;
 }
 
 .alquiler-cuerpo {
